@@ -1,0 +1,64 @@
+<div class="body-blur">
+  <div class="row columns">
+    <h1>Add New Beer</h1>
+  </div>
+
+  <form (submit)="onAddPost(postForm)" #postForm="ngForm">
+    <div class="row">
+      <div class="columns small-12 medium-6">
+        <label
+          >Name of Beer
+          <input type="text" name="beerTitle" ngModel #beerTitle />
+        </label>
+      </div>
+      <div class="columns small-12 medium-6">
+        <label
+          >Tagline
+          <input type="text" name="tagline" ngModel #tagline />
+        </label>
+      </div>
+      <div class="columns small-12 medium-6">
+        <label
+            >Image Url
+            <input type="text" name="imageUrl" ngModel #imageUrl />
+          </label>
+      </div>
+      <div class="columns small-12 medium-6">
+        <label
+            >Date Brewed
+            <input type="text" name="firstBrewed" ngModel #firstBrewed />
+          </label>
+      </div>
+      <div class="columns small-12 medium-6">
+        <label
+            >Abv
+            <input type="text" name="abv" ngModel #abv />
+          </label>
+      </div>
+    </div>
+    <div class="row columns">
+      <label
+        >Beer Description
+        <textarea
+          type="text"
+          name="description"
+          ngModel
+          #description
+        ></textarea>
+      </label>
+      <label
+          >Brewer Tips
+          <textarea
+            type="text"
+            name="brewersTips"
+            ngModel
+            #brewersTips
+          ></textarea>
+        </label>
+
+      <button type="submit" class="submit cta-btn filled button">
+        Save Beer
+      </button>
+    </div>
+  </form>
+</div>

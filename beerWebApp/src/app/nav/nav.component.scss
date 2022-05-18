@@ -1,0 +1,46 @@
+$accent-color: #00E4AC;
+$bg: #2A3136;
+.header {
+  padding: 30px 0;
+  margin-bottom: 40px;
+}
+
+a.filled {
+  background:$accent-color;
+    color:$bg;
+    float:left;
+    border-radius:0;
+    font-size: 1.5em;
+    text-transform:uppercase;
+    font-family:'Raleway';
+    font-weight:700;
+    padding: 12px 22px;
+    margin-top:40px;
+
+    &:hover {
+      color: #fff;
+    }
+
+}
+
+#logo {
+  padding: 1rem;
+  width:250px;
+}
+
+@media screen and (max-width: 39.9375em) {
+
+  #logo, .cta-btn {
+      margin: 0 auto;
+      display:block;
+  }
+  .cta-btn {
+      width:100%;
+      text-align:center;
+      margin-top:20px;
+  }
+  .header {
+      margin-bottom: 0;
+  }
+
+}
