@@ -8,10 +8,8 @@
     </div>
     <div class="columns small-12 medium-2">
       <img class="h250" [src]="post.imageUrl" />
-
     </div>
   </div>
-
   <div class="row columns">
     <p class="post-p">Description</p>
     <p>{{ post.description }}</p>
@@ -24,6 +22,10 @@
     <p class="post-p">Brewer Tips</p>
     <p>{{ post.brewersTips }}</p>
 
+  </div>
+
+  <div class="row">
+    <a [routerLink]="['/edit', post.id]" class="cta-btn-nav filled button">Edit Post</a>
   </div>
 
 </div>

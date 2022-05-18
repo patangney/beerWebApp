@@ -8,7 +8,8 @@ const routes: Routes = [
   {path: '', component: PostListComponent },
   {path: 'create', component: PostCreateComponent },
   {path: 'details/:id', component: ViewPostComponent },
-  {path: 'random', component: ViewPostComponent }
+  {path: 'random', component: ViewPostComponent },
+  {path: 'edit/:id', component: PostCreateComponent },
 
 
 ];
