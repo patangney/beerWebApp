@@ -8,31 +8,31 @@
       <div class="columns small-12 medium-6">
         <label
           >Name of Beer
-          <input type="text" name="beerTitle" ngModel #beerTitle />
+          <input type="text" name="beerTitle" [ngModel]="post.beerTitle" #beerTitle />
         </label>
       </div>
       <div class="columns small-12 medium-6">
         <label
           >Tagline
-          <input type="text" name="tagline" ngModel #tagline />
+          <input type="text" name="tagline" [ngModel]="post.tagline" #tagline />
         </label>
       </div>
       <div class="columns small-12 medium-6">
         <label
             >Image Url
-            <input type="text" name="imageUrl" ngModel #imageUrl />
+            <input type="text" name="imageUrl" [ngModel]="post.imageUrl" #imageUrl />
           </label>
       </div>
       <div class="columns small-12 medium-6">
         <label
             >Date Brewed
-            <input type="text" name="firstBrewed" ngModel #firstBrewed />
+            <input type="text" name="firstBrewed" [ngModel]="post.firstBrewed" #firstBrewed />
           </label>
       </div>
       <div class="columns small-12 medium-6">
         <label
             >Abv
-            <input type="text" name="abv" ngModel #abv />
+            <input type="text" name="abv" [ngModel]="post.abv" #abv />
           </label>
       </div>
     </div>
@@ -42,7 +42,7 @@
         <textarea
           type="text"
           name="description"
-          ngModel
+          [ngModel]="post.description"
           #description
         ></textarea>
       </label>
@@ -51,7 +51,7 @@
           <textarea
             type="text"
             name="brewersTips"
-            ngModel
+            [ngModel]="post.brewersTips"
             #brewersTips
           ></textarea>
         </label>

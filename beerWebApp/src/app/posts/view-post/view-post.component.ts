@@ -17,7 +17,7 @@ export class ViewPostComponent implements OnInit {
 
 
   //add condition for edit or random mode
-  private mode = 'edit';
+  private mode = 'view';
 
   constructor(public postsService: PostsService, public route: ActivatedRoute) { }
 
@@ -28,7 +28,7 @@ export class ViewPostComponent implements OnInit {
       if (paramMap.has('id')) {
         console.log('pos 1');
         //pass in extracted id from url
-        this.mode = 'edit'; //TODO - add a edit function in view-post details & delete fn
+        this.mode = 'view'; //TODO - add a edit function in view-post details & delete fn
         this.postId = paramMap.get('id');
         this.post = this.postsService.getPost(this.postId);
       }
