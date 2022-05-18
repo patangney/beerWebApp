@@ -70,7 +70,7 @@ export class PostsService {
     .subscribe((data) => {
       console.log(data.posts); //post object
 
-    }) //TODO - come back to this
+    }) //TODO - come back to this adf
   }
 
 
