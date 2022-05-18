@@ -52,18 +52,6 @@ export class PostsService {
   }
 
  // Get Random Post
-  // getRandomPost() {
-  //   let API_URL = `${this.REST_API}/posts/random/`;
-  //   this.httpClient.get<{ message: string, posts: any }>(API_URL).subscribe((dataResponse) => {
-  //       console.log(dataResponse);
-  //       let clonedArray = JSON.parse(JSON.stringify(dataResponse.posts));
-  //       clonedArray.map(post => {
-  //         return {id: post._id}
-  //       })
-  //       this.postsUpdated.next([...this.posts]);
-  //     }
-  //   )
-  // }
   getRandomPost() {
     let API_URL = `${this.REST_API}/posts/random/`;
     this.httpClient.get<{ message: string, posts: any }>(API_URL)
